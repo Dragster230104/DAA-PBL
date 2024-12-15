@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Road Map Navigator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Road Map Navigator</h1>
+        <div class="input-section">
+            <label for="source">Source City:</label>
+            <input type="text" id="source" placeholder="Enter source city (e.g., Delhi)">
+            
+            <label for="destination">Destination City:</label>
+            <input type="text" id="destination" placeholder="Enter destination city (e.g., Mumbai)">
+            
+            <button onclick="findShortestPath()">Find Shortest Path</button>
+        </div>
+        <div class="output-section">
+            <h3>Shortest Path:</h3>
+            <p id="path"></p>
+            <h3>Total Distance:</h3>
+            <p id="distance"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
